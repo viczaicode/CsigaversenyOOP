@@ -25,7 +25,7 @@ public class CsigaJatek {
     }
     
     public void verseny(){
-        
+        System.out.println("Fogadj egy csigára:" + " " + csigak[0].getSzinNev()+ " " + csigak[1].getSzinNev()+ " " + csigak[2].getSzinNev());
         String gyoztes = SC.nextLine();
         
         for (int kor = 1; kor <= korokSzama; kor++) {
@@ -50,7 +50,7 @@ public class CsigaJatek {
         }
         System.out.println("\u001B[30mGyőztes csiga: " + csigak[gyoztesIndex].getSzin() + csigak[gyoztesIndex].getNev());
         
-        if (gyoztes == csigak[gyoztesIndex].getSzinNev()) {
+        if (gyoztes.equals(csigak[gyoztesIndex].getSzinNev())) {
             System.out.println("Jött a mix!");
         } else {
             System.out.println("Elment a pénzed, csáááá!!!!");
